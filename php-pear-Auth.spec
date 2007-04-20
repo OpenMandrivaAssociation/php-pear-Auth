@@ -2,16 +2,16 @@
 %define		_status		stable
 %define		_pearname	%{_class}
 
-%define		_requires_exceptions pear(IMAPContainer.php)\\|pear(MDBContainer.php)\\|pear(DBLiteContainer.php)
+%define		_requires_exceptions pear(IMAPContainer.php)\\|pear(MDBContainer.php)\\|pear(DBLiteContainer.php)\\|pear(PHPUnit.php)
 
 Summary:	%{_pearname} - PHP PEAR authentication class
 Name:		php-pear-%{_pearname}
-Version:	1.3.0
-Release:	%mkrel 2
+Version:	1.5.1
+Release:	%mkrel 1
 License:	PHP License
 Group:		Development/PHP
 URL:		http://pear.php.net/package/Auth/
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tar.bz2
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 Requires(post): php-pear
 Requires(preun): php-pear
 Requires:	php-pear
@@ -78,7 +78,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(644,root,root,755)
-%doc %{_pearname}-%{version}/{README*,tests}
+%doc %{_pearname}-%{version}/{README*,tests,examples}
 %dir %{_datadir}/pear/%{_class}
 %dir %{_datadir}/pear/%{_class}/Auth
 %dir %{_datadir}/pear/%{_class}/Container
@@ -88,5 +88,3 @@ rm -rf %{buildroot}
 %{_datadir}/pear/%{_class}/Container/*.php
 %{_datadir}/pear/%{_class}/Frontend/*
 %{_datadir}/pear/packages/%{_pearname}.xml
-
-
