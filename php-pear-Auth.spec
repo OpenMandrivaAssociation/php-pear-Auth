@@ -7,7 +7,7 @@
 Summary:	%{_pearname} - PHP PEAR authentication class
 Name:		php-pear-%{_pearname}
 Version:	1.6.1
-Release:	%mkrel 2
+Release:	%mkrel 3
 License:	PHP License
 Group:		Development/PHP
 URL:		http://pear.php.net/package/Auth/
