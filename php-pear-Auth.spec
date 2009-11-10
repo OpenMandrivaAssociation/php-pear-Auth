@@ -1,6 +1,7 @@
 %define		_class		Auth
 %define		upstream_name	%{_class}
 
+Name:       php-pear-%{upstream_name}
 Version:	1.6.1
 Release:	%mkrel 4
 Summary:	PHP PEAR authentication class
