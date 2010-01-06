@@ -2,8 +2,8 @@
 %define		upstream_name	%{_class}
 
 Name:       php-pear-%{upstream_name}
-Version:	1.6.1
-Release:	%mkrel 4
+Version:	1.6.2
+Release:	%mkrel 1
 Summary:	PHP PEAR authentication class
 License:	PHP License
 Group:		Development/PHP
